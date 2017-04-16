@@ -36,30 +36,72 @@ nav {
   right: 0;
   left: 0;
   margin: 10% auto;
-  width: 400px;
+  width: 500px;
   // vertical-align: middle;
 }
 h1  {
-  font-size: 3.5em;
+  font-family: 'Raleway', san-serif;
+  font-weight: 600;
+  font-size: 5em;
 }
 h3 {
-
+  font-family: 'Lusitana', san-serif;
   font-size: 1.3em;
 }
 .name-hr {
   border-top: 3px solid #fff;
   margin: 2em auto;
-  width: 100px;
+  width: 140px;
 }
 hr {
   border: 0;
 }
 .about-me {
-  background-color: lightblue;
+  background-color: #f4f4f4;
   height: 500px;
 }
 .about-me h2 {
+  font-weight: 600;
+  font-family: 'Raleway', san-serif;
+  letter-spacing: .4em;
+  font-size: 1.4em;
   padding-top: 100px;
   text-align: center;
   text-transform: uppercase;
+}
+.about-hr {
+  border-top: 3px solid #ab977a;
+  margin: 2em auto;
+  width: 100px;
+}
+.about-me h3 {
+  font-family: 'Raleway', san-serif;
+  font-size: .9em;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 1px;
+  letter-spacing: .3em;
+}
+.about-me p {
+  margin-top: 25px;
+  font-size: 1em;
+  font-family: 'Lusitana', san-serif;
+  color: #7a7a7a;
+}
+.about-me-section {
+  width: 33.333333%;
+  float: left;
+}
+.about-me-section div {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 20px;
+  padding-right: 15px;
+}
+.about-me-section div:nth-child(2) {
+  width: 60%;
+}
+.about-me-info {
+  position: relative;
+  padding-left: 12%;
 }
