@@ -60,7 +60,7 @@ hr {
   background-color: #f4f4f4;
   height: 500px;
 }
-.about-me h2 {
+.about-me h2, .portfolio h2 {
   font-weight: 600;
   font-family: 'Raleway', san-serif;
   letter-spacing: .4em;
@@ -103,5 +103,72 @@ hr {
 }
 .about-me-info {
   position: relative;
-  padding-left: 12%;
+  padding-left: 10%;
+}
+.portfolio {
+  height: 400px;
+
+}
+.portfolio-container {
+  margin: 0 auto;
+  width: 75%;
+  margin-top: 70px;
+  // margin-left: 15%;
+}
+figcaption {
+  position: absolute;
+  top: 27%;
+  text-align: center;
+  width: calc(100% - 30px);
+}
+figcaption h3 {
+  color: white;
+  font-weight: 500;
+  font-family: 'Raleway', san-serif;
+  text-transform: uppercase;
+  letter-spacing: .4em;
+  font-size: 1.1em;
+  background-color: black;
+}
+.portfolio-indiv {
+  display: inline-block;
+  width: 33.333%;
+  float: left;
+  padding: 15px;
+  // padding-left: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolio div img {
+  transition: opacity .35s;
+  width: 100%;
+}
+
+.portfolio h3:hover {
+  font-size: 1.3em;
+  font-style: italic;
+}
+button {
+  font-family: 'Raleway', san-serif;
+  padding: 8px;
+  opacity: 1;
+  // background: none repeat scroll 0 0 #987f5b;
+  border: medium none;
+  color: #fff;
+  font-size: 0.875em;
+  font-weight: 300;
+  height: 35px;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-top: 40px;
+  padding: 12px;
+  background-size: 200% 100%;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #987f5b 50%, black 50%);
+  transition: background-position .3s ease 0s;
+}
+button:hover {
+    background-position: -100% 0;
 }
