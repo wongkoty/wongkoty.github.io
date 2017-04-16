@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.hero {
+  background-color: papayawhip;
+  height: 500px;
+}
+nav {
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  font-family: raleway;
+  font-weight: 500;
+  font-size: 1em;
+  cursor: pointer;
+  background: none repeat scroll 0 0 rgba(0,0,0,0);
+}
+.nav-left {
+  float: left;
+  margin: 2% 0 0 10%;
+  font-family: raleway;
+}
+.nav-right {
+  float: right;
+  margin: 2% 10% 0 0;
+}
+.nav-right a {
+  // margin-left: 30px;
+}
+.name {
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
+  margin: 10% auto;
+  width: 400px;
+  // vertical-align: middle;
+}
+h1  {
+  font-size: 3.5em;
+}
+h3 {
+
+  font-size: 1.3em;
+}
+.name-hr {
+  border-top: 3px solid #fff;
+  margin: 2em auto;
+  width: 100px;
+}
+hr {
+  border: 0;
+}
+.about-me {
+  background-color: lightblue;
+  height: 500px;
+}
+.about-me h2 {
+  padding-top: 100px;
+  text-align: center;
+  text-transform: uppercase;
+}
