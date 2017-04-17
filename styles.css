@@ -60,7 +60,7 @@ hr {
   background-color: #f4f4f4;
   height: 500px;
 }
-.about-me h2, .portfolio h2 {
+.about-me h2, .portfolio h2, .contact h2 {
   font-weight: 600;
   font-family: 'Raleway', san-serif;
   letter-spacing: .4em;
@@ -106,8 +106,7 @@ hr {
   padding-left: 10%;
 }
 .portfolio {
-  height: 400px;
-
+  height: 750px;
 }
 .portfolio-container {
   margin: 0 auto;
@@ -150,7 +149,7 @@ figcaption h3 {
   font-size: 1.3em;
   font-style: italic;
 }
-button {
+button, .btn {
   font-family: 'Raleway', san-serif;
   padding: 8px;
   opacity: 1;
@@ -169,6 +168,83 @@ button {
   background-image: linear-gradient(to right, #987f5b 50%, black 50%);
   transition: background-position .3s ease 0s;
 }
-button:hover {
-    background-position: -100% 0;
+button:hover, .btn:hover {
+  background-position: -100% 0;
+}
+.contact {
+  height: 800px;
+  background-color: #f4f4f4;
+}
+.query {
+  text-align: center;
+  color: #7a7a7a;
+  font-size: 1.3em;
+}
+.contact-form {
+  // margin-top: 50px;
+  margin: 50px auto;
+  width: 27%;
+}
+#name, #email, #comment {
+  margin-bottom: 1.3em;
+  height: 3.5em;
+  background: none repeat scroll 0 0 rgba(0,0,0,0);
+  border-color: #acacac;
+  border-image: none;
+  border-style: none none solid;
+  border-width: medium medium 1px;
+  color: #000;
+  font-family: 'Lusitana',serif;
+  font-size: 1.2em;
+  resize: none;
+  text-align: left;
+  border-radius: 0;
+}
+#name::-webkit-input-placeholder, #email::-webkit-input-placeholder, #comment::-webkit-input-placeholder{
+  color: black !important;
+  font-family: 'Lusitana',serif;
+}
+#name:focus, #email:focus, #comment:focus{
+  outline: none;
+}
+.btn {
+  width: 100%;
+}
+.direct-email, .direct-email a {
+  text-align: center;
+  color: #000;
+  font-size: 1.1em;
+}
+.direct-email a {
+  font-size: .98em;
+  text-decoration: underline;
+}
+.direct-email a:hover {
+  color: #acacac;;
+}
+.social {
+  text-align: center;
+}
+.social a {
+  border-bottom: 2px solid #ab977a;
+  color: #000;
+  display: inline-block;
+  font-size: 1em;
+  margin-top: 2%;
+  padding-bottom: 0.3em;
+  margin-right: 3%;
+  font-family: 'Lusitana',serif;
+}
+.social a:hover {
+  border-color: #2c68b2;
+  color: #2c68b2;
+}
+footer {
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: .9em;
+  color: #acacac;
+  font-family: 'Raleway', san-serif;
+  letter-spacing: .2em;
 }
