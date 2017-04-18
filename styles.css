@@ -370,3 +370,67 @@ footer {
     width: 50px;
   }
 }
+@media screen and (max-width: 480px) {
+  .nav-right, .nav-left {
+    float: left;
+    margin: 2% 0 0 5%;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  .name-hr {
+    width: 70px;
+  }
+  .name p {
+    font-size: 1em;
+  }
+  .about-me h3 {
+    font-size: 8px;
+    margin-top: -5px;
+  }
+  .about-me p {
+    font-size: 8px;
+    margin-top: 10px;
+  }
+  .portfolio {
+    padding-bottom: 950px; 
+  }
+  .about-me h2, .portfolio h2, .contact h2{
+    padding-top: 50px;
+  }
+  .portfolio-container {
+    margin-top: 40px;
+    width: 85%;
+  }
+  .portfolio-indiv {
+    width: 100%;
+  }
+  figcaption h3 {
+    font-size: 1em;
+  }
+  button {
+    margin-top: 45px;
+    height: 28px;
+    padding: 8px;
+    font-size: .8em;
+  }
+  .query {
+    font-size: .9em;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contact-form {
+    width: 65%;
+    margin: 30px auto;
+  }
+  #name, #contact, #email {
+    font-size: 12.4px;
+  }
+  .contact {
+    padding-bottom: 30px;
+    min-height: 0;
+  }
+  footer {
+    font-size: 10px;
+  }
+}
