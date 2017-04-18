@@ -2,34 +2,38 @@
 <html>
 <head>
   <title>Koty Wong - Software Engineer</title>
+  <meta charset="utf-8">
+
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lusitana" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="modal.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <div class='container'>
-    <div class='hero'>
-      <nav class="nav">
-        <div class="nav-left">
-          <a href="index.html">Koty Wong</a>
+  <!-- <div class='container'> -->
+    <section class='hero'>
+    <div class='content'>
+        <nav class="nav">
+          <div class="nav-left">
+            <a href="index.html">Koty Wong</a>
+          </div>
+          <div class="nav-right">
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="https://nostacktofullstack.wordpress.com/">Blog</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+        <div class='name'>
+          <h1>Koty Wong</h1>
+          <hr class="name-hr">
+          <p>Software Engineer | Foodie | Life Enthusiast</p>
         </div>
-        <div class="nav-right">
-          <a href="#">About</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact</a>
-        </div>
-      </nav>
-      <div class='name'>
-        <h1>Koty Wong</h1>
-        <hr class="name-hr">
-        <h3>Software Engineer | Foodie | Life Enthusiast</h3>
       </div>
-    </div>
-    <div class="about-me">
+    </section>
+    <section id='about' class="about-me">
       <h2>About Me</h2> 
       <hr class="about-hr">
       <div class="about-me-info"> 
@@ -61,8 +65,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="portfolio">
+    </section>
+    <div id="portfolio" class="portfolio">
       <h2>Portfolio</h2> 
       <hr class="about-hr">
       <div class="portfolio-container">
@@ -73,8 +77,12 @@
             <button id="inknead-btn">view more</button>
             <div class="modal" id="inknead-modal">
               <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Inknead is some shit</p>
+                <img src="./images/inknead.png">
+                <span id="inknead-close" class="close">&times;</span>
+                <h2>InKnead</h2>
+                <p>Landing page for mobile application made originally with Ruby on Rails. Transitioned to a simple Node.js backend to make calls to Mailchimp and React frontend. Used SASS precompiler for styling and webpack to bundle togther components.</p>
+                <button><a href="https://github.com/wongkoty/inKnead-website">Github</a></button>
+                <button><a href="http://www.inknead.pizza/">Website</a></button>
               </div>
             </div>
           </figcaption>
@@ -83,11 +91,15 @@
           <img src="./images/space.png">
           <figcaption>
             <h3>Space</h3>
-            <button id="myBtn">view more</button>
-            <div class="modal" id="myModal">
+            <button id="space-btn">view more</button>
+            <div class="modal" id="space-modal">
               <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Some text in the Modal..</p>
+                <img src="./images/space.png">
+                <span id="space-close" class="close">&times;</span>
+                <h2>Space Exploration</h2>
+                <p>Orrery that was built with 3js for 3d rendering. Planets were made from images found on the interwebs and the distance was constructed using a logarithmic scale so each planet could fit. Uses basic jQuery to display information about planets.</p>
+                <button><a href="https://github.com/wongkoty/planetary_exploration">Github</a></button>
+                <button><a href="https://spaceexploration.herokuapp.com/">Website</a></button>
               </div>
             </div>
           </figcaption>
@@ -95,27 +107,57 @@
         <div class="portfolio-indiv">
           <img src="./images/calories.png">
           <figcaption>
-            <h3>Calorie Counter</h3>
-            <button>view more</button>
+            <h3>Calorie</h3>
+            <button id=calorie-btn>view more</button>
+            <div class="modal" id="calorie-modal">
+              <div class="modal-content">
+                <img src="./images/calories.png">
+                <span id="calorie-close" class="close">&times;</span>
+                <h2>Calorie Counter</h2>
+                <p>A calorie counting MERN stack application that features user authentication from Passport.js.  It pulls data from USDA food database API for food and serving size. Site is responsive and has a calendar date picker.</p>
+                <button><a href="https://github.com/wongkoty/project3_calorie_count">Github</a></button>
+                <button><a href="https://fork-calorie-counter-app.herokuapp.com/">Website</a></button>
+              </div>
+            </div>
           </figcaption>
         </div>
         <div class="portfolio-indiv">
           <img src="./images/food.png">
           <figcaption>
             <h3>Food Date</h3>
-            <button>view more</button>
+            <button id="food-btn">view more</button>
+            <div class="modal" id="food-modal">
+              <div class="modal-content">
+                <img src="./images/food.png">
+                <span id="food-close" class="close">&times;</span>
+                <h2>Food Date</h2>
+                <p>A Node.js application that employs MVC architecture. Features user authentication and validations. Incorporates Google Maps API to render locations, Yelp API to generate restaurants based on location, and Twilio API to send text messages for food dates.</p>
+                <button><a href="https://github.com/wongkoty/fooddate">Github</a></button>
+                <button><a href="https://fooddate.herokuapp.com/">Website</a></button>
+              </div>
+            </div>
           </figcaption>
         </div>
         <div class="portfolio-indiv">
           <img src="./images/blackjack.png">
           <figcaption>
             <h3>Blackjack</h3>
-            <button>view more</button>
+            <button id='blackjack-btn'>view more</button>
+            <div class="modal" id="blackjack-modal">
+              <div class="modal-content">
+                <img src="./images/blackjack.png">
+                <span id="blackjack-close" class="close">&times;</span>
+                <h2>Blackjack</h2>
+                <p>A clientside game which features HTML/CSS/Javascript. Built after 2 weeks of studying code. This Blackjack game is bug free, has a payroll, and feature that tells when the user has busted. Play until your heart's content!</p>
+                <button><a href="https://github.com/wongkoty/blackjack">Github</a></button>
+                <button><a href="http://wongkoty.github.io/blackjack/">Website</a></button>
+              </div>
+            </div>
           </figcaption>
         </div>
       </div>
     </div>
-    <div class="contact">
+    <section id= "contact" class="contact">
       <h2>Contact</h2>
       <hr class="about-hr">
       <div class="query">
@@ -123,9 +165,9 @@
       </div>
       <div class="contact-form">
         <form action="mailto:wongkoty@gmail.com" method="post" enctype="text/plain">
-          <input type="text" name="name" id='name' size="34" placeholder="Name"><br>
-          <input type="text" name="mail" id='email' size='34' placeholder='Email'><br>
-          <input type="text" name="comment" id='comment' size='34' placeholder='Comment'><br>
+          <input type="text" class="form-input" name="name" id='name' size="34" placeholder="Name"><br>
+          <input type="text" class="form-input" name="mail" id='email' size='34' placeholder='Email'><br>
+          <input type="text" class="form-input" name="comment" id='comment' size='34' placeholder='Comment'><br>
           <input type="submit" value="Send" class='btn'>
         </form>
       </div>
@@ -135,11 +177,16 @@
       <div class="social">
         <a href="https://www.linkedin.com/in/wongkoty">LinkedIn</a>
         <a href="https://github.com/wongkoty">Github</a>
+        <a href="https://twitter.com/therealkotywong">Twitter</a>
       </div>
-    </div>
+    </section>
     <footer>&copy; 2017, Koty Wong</footer>
-  </div>
+  <!-- </div> -->
 
 </body>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 <script type="text/javascript" src="scripts.js"></script>
 </html>
