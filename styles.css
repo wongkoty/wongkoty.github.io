@@ -375,6 +375,9 @@ footer {
     float: left;
     margin: 2% 0 0 5%;
   }
+  .about-me {
+    padding-bottom: 60px;
+  }
   h1 {
     font-size: 2.5em;
   }
@@ -393,11 +396,20 @@ footer {
     margin-top: 10px;
   }
   .portfolio {
-    padding-bottom: 950px; 
+    padding-bottom: 50px; 
+    overflow: hidden;
   }
   .about-me h2, .portfolio h2, .contact h2{
     padding-top: 50px;
   }
+  .about-me-section {
+    width: 100%;
+    float: none;
+  }
+  .about-me-section span {
+    width: 50px;
+  }
+
   .portfolio-container {
     margin-top: 40px;
     width: 85%;
